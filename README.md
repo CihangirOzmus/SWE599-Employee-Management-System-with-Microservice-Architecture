@@ -5,10 +5,12 @@
  
  # List of Services
  
- config-service
+ config-service is responsible to serve the spring configuration to every service.
  
- registry-service
+ registry-service is responsible for the registration and discovery of the other services.
  
- gateway-service
+ gateway-service is responsible to map the incoming requests to specific microservice.
  
- auth-service
+ auth-service is responsible to create users, authenticate them, store their tokens/refresh tokens and revoke it if needed.
+ 
+ 
