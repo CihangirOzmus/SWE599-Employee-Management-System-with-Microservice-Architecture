@@ -25,6 +25,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated()
                 .and()
                 .csrf().disable();
+        //code below gives error
+//        http
+//                .authorizeRequests().anyRequest().authenticated()
+//                .antMatchers("/oauth/**").permitAll()
+//                .and()
+//                .csrf().disable();
         // @formatter:on
     }
 
