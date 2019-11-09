@@ -1,4 +1,4 @@
-package cigi.microservice.authservice.service.dto;
+package cigi.microservice.authservice.dto;
 
 import java.io.Serializable;
 

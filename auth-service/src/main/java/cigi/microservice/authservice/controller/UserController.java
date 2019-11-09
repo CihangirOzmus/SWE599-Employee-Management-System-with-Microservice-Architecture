@@ -1,8 +1,8 @@
 package cigi.microservice.authservice.controller;
 
 import cigi.microservice.authservice.domain.User;
-import cigi.microservice.authservice.service.dto.UserDto;
-import cigi.microservice.authservice.service.dto.UserRegistrationDto;
+import cigi.microservice.authservice.dto.UserDto;
+import cigi.microservice.authservice.dto.UserRegistrationDto;
 import cigi.microservice.authservice.service.UserService;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
