@@ -1,5 +1,5 @@
 ribbon:
-  ReadTimeout: 20000
+  ReadTimeout: 60000
   ConnectTimeout: 20000
 
 zuul:

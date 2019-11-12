@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/account-service.iml" filepath="$PROJECT_DIR$/account-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/account-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/account-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/account-service.test.iml" filepath="$PROJECT_DIR$/.idea/modules/account-service.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cigi.microservice.account-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/cigi.microservice.account-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cigi.microservice.account-service.test.iml" filepath="$PROJECT_DIR$/.idea/modules/cigi.microservice.account-service.test.iml" />
     </modules>
   </component>
 </project>

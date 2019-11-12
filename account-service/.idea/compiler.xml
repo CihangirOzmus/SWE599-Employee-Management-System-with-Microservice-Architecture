@@ -7,6 +7,8 @@
     <bytecodeTargetLevel>
       <module name="account-service.main" target="11" />
       <module name="account-service.test" target="11" />
+      <module name="cigi.microservice.account-service.main" target="11" />
+      <module name="cigi.microservice.account-service.test" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
