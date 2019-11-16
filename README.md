@@ -1,9 +1,9 @@
 # Employee Management System with Microservice Architecture
  Graduation Project for Bogazici University - MSc Software Engineering
  
- Project Advisor: PhD Suzan Üsküdarlı https://www.cmpe.boun.edu.tr/~uskudarli/
+ Project Advisor: [PhD Suzan Üsküdarlı](https://www.cmpe.boun.edu.tr/~uskudarli/)
  
- Reference: Microservices with Spring Boot and Spring Cloud. From config server to OAuth2 server (without inMemory things) https://itnext.io/microservices-with-spring-boot-and-spring-cloud-16d2c056ba12
+ Reference: [Microservices with Spring Boot and Spring Cloud. From config server to OAuth2 server (without inMemory things) ](https://itnext.io/microservices-with-spring-boot-and-spring-cloud-16d2c056ba12)
  
  # List of Services
  
