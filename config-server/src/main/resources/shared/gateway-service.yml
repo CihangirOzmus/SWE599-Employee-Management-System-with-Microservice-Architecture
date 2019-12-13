@@ -1,5 +1,5 @@
 ribbon:
-  ReadTimeout: 60000
+  ReadTimeout: 80000
   ConnectTimeout: 20000
 
 zuul:
@@ -17,6 +17,12 @@ zuul:
     account-service:
       path: /accounts/**
       serviceId: account-service
+      stripPrefix: false
+      sensitiveHeaders:
+
+    employee-service:
+      path: /employees/**
+      serviceId: employee-service
       stripPrefix: false
       sensitiveHeaders:
 

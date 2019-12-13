@@ -18,20 +18,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        // @formatter:offs
         http
                 .authorizeRequests()
                 .antMatchers("/oauth/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .csrf().disable();
-        //code below gives error
-//        http
-//                .authorizeRequests().anyRequest().authenticated()
-//                .antMatchers("/oauth/**").permitAll()
-//                .and()
-//                .csrf().disable();
-        // @formatter:on
     }
 
     @Override
