@@ -21,6 +21,7 @@ public class EmployeeController {
     }
 
     @PostMapping
+    @PreAuthorize("#oauth2.hasScope('server')")
     public EmployeeDto createEmployee(@Valid @RequestBody EmployeeDto employeeDto){
         Employee savedEmployee = employeeService.create(toEmployee(employeeDto));
         return toDto(savedEmployee);

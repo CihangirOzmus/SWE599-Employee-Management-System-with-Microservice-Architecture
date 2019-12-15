@@ -14,7 +14,7 @@ import java.util.Set;
 @ChangeLog
 public class InitialValuesChangeLog {
 
-    @ChangeSet(order = "001", id = "insertBrowserClientDetails", author = "Marcus Hert Da Corégio")
+    @ChangeSet(order = "001", id = "insertBrowserClientDetails", author = "Cihangir Ozmus")
     public void insertBrowserClientDetails(MongoTemplate mongoTemplate) {
         AuthClientDetails browserClientDetails = new AuthClientDetails();
         browserClientDetails.setClientId("browser");
@@ -25,7 +25,7 @@ public class InitialValuesChangeLog {
         mongoTemplate.save(browserClientDetails);
     }
 
-    @ChangeSet(order = "002", id = "insertUserToTestAuthentication", author = "Marcus Hert Da Corégio")
+    @ChangeSet(order = "002", id = "insertUserToTestAuthentication", author = "Cihangir Ozmus")
     public void insertUserToTestAuthentication(MongoTemplate mongoTemplate) {
         Set<Authorities> authorities = new HashSet<>();
         authorities.add(Authorities.ROLE_USER);
@@ -39,7 +39,7 @@ public class InitialValuesChangeLog {
         mongoTemplate.save(user);
     }
 
-    @ChangeSet(order = "003", id = "insertAccountServiceClientDetails", author = "Marcus Hert Da Corégio")
+    @ChangeSet(order = "003", id = "insertAccountServiceClientDetails", author = "Cihangir Ozmus")
     public void insertAccountServiceClientDetails(MongoTemplate mongoTemplate) {
         AuthClientDetails accountServiceClientDetails = new AuthClientDetails();
         accountServiceClientDetails.setClientId("account-service");
@@ -48,6 +48,17 @@ public class InitialValuesChangeLog {
         accountServiceClientDetails.setGrantTypes("refresh_token,client_credentials");
 
         mongoTemplate.save(accountServiceClientDetails);
+    }
+
+    @ChangeSet(order = "004", id = "insertEmployeeServiceClientDetails", author = "Cihangir Ozmus")
+    public void insertEmployeeServiceClientDetails(MongoTemplate mongoTemplate) {
+        AuthClientDetails employeeServiceClientDetails = new AuthClientDetails();
+        employeeServiceClientDetails.setClientId("employee-service");
+        employeeServiceClientDetails.setClientSecret("$2y$12$pd9/WLz/vCHow19DN3PhPe4Ob4VVaihByOHFGTodE/xznJ17pqI4m");
+        employeeServiceClientDetails.setScopes("server");
+        employeeServiceClientDetails.setGrantTypes("refresh_token,client_credentials");
+
+        mongoTemplate.save(employeeServiceClientDetails);
     }
 
 }
